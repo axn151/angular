@@ -1,4 +1,4 @@
-var app = angular.module('MyApp', []);
+/*var app = angular.module('MyApp', []);
 app.controller('questionController', function ($scope) {
     //objeto pregunta
     $scope.pregunta = {
@@ -33,6 +33,7 @@ app.controller('questionController', function ($scope) {
         });
         this.key.active = true;
     };
+
     $scope.respuestas = [];
     $scope.responder = function () {
         angular.forEach($scope.pregunta.respuestas, function (respuesta, i) {
@@ -44,3 +45,4 @@ app.controller('questionController', function ($scope) {
         });
     };
 });
+*/
