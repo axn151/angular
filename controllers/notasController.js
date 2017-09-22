@@ -1,35 +1,7 @@
-//modelo notasModel
-//un servicio viene a ser un modelo
-Agenda.service("notasModel", function () {
-
-    this.getNotas = function () {
-        return [
-            {
-                id: 0,
-                nombre: "Israel Parra",
-                edad: "32 años"
-            },
-            {
-                id: 1,
-                nombre: "Andrés Cuenca",
-                edad: "24 años"
-            },
-            {
-                id: 2,
-                nombre: "Juan",
-                edad: "28 años"
-            },
-            {
-                id: 3,
-                nombre: "Pepito",
-                edad: "18 años"
-            },
-            {
-                id: 4,
-                nombre: "Manuel",
-                edad: "45 años"
-            }
-        ]
-    }
-
-});
+//controlador llamado notasController al que inyectamos el modelo notasModel
+Agenda.controller("notasController", function($scope, notasModel){
+ 
+    //obtenemos todas las notas
+    $scope.notas = notasModel.getNotas();
+ 
+})
