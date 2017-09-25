@@ -8,16 +8,13 @@ Agenda.service("notasModel", function () {
 
         $.ajax({
                 type: "GET",
-                // data: persona,
+
                 url: 'http://localhost:8001/api/users',
                 success: function (data) {
                     resultado = data;
 
-                },
-                error: function (e) {
-
-                    resultado = null;
                 }
+
 
             }
 
